@@ -1,0 +1,190 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bd {
+            font-family: 'Philosopher', sans-serif;
+            background-color: rgba(209, 162, 209, 0.5);
+        }
+
+        body {
+            background-color: rgba(209, 162, 209, 0.5);
+            padding: 1px 0 5px 0;
+            margin: auto;
+            font-family: 'Philosopher', sans-serif;
+            margin-top: 18px;
+            margin-bottom: 0px;
+        }
+
+        input {
+            margin: 4px 0 6px 0;
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 13px;
+            outline: none;
+            border: none;
+        }
+
+        .input-pass i,
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 33.5%;
+            transform: translate(-4525%);
+        }
+
+        .input-box i {
+            top: 25.5%;
+            transform: translate(-2830%);
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+        }
+
+        textarea {
+            display: inline-block;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form {
+            font-size: 15px;
+            height: auto;
+            width: 500px;
+            padding: 0px 28px 0px 28px;
+            background-color: rgba(209, 162, 209, 0.5);
+            border: 1px solid white;
+            margin: auto;
+            margin-top: -1px;
+            margin-bottom: -4px;
+        }
+
+        .wrapper {
+            width: 500px;
+            height: auto;
+            border-radius: 20px;
+            backdrop-filter: blur(100px);
+            margin: auto;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+            padding: 15px 0 8px 0;
+        }
+
+        .form-row {
+            font-size: 14px;
+            margin: -7px;
+        }
+
+        label {
+            font-size: 15px;
+        }
+
+        .para {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .pa {
+            padding: -10px 0 0px 0;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        .para p a {
+            text-decoration: none;
+        }
+
+        .p1 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #04AA6D;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            margin-top: -8px;
+            margin-bottom: 1px;
+        }
+
+        .valid {
+            margin-top: 3px;
+            width: 218px;
+            font-size: 16px;
+            color: #c62828;
+            background-color: rgba(255, 0, 0, 0.1);
+            padding: 5px 8px;
+            border-radius: 3px;
+            border: 1px solid #ef9a9a;
+            display: none;
+        }
+
+        .bd input:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #ccc;
+        }
+
+        .bd button:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #ccc;
+        }
+
+        .ri-eye-off-fill {
+            position: relative;
+            left: 190px;
+            top: -35px;
+        }
+
+        .ri-eye-fill {
+            position: relative;
+            left: 190px;
+            top: -35px;
+        }
+
+        .ri-mail-fill {
+            position: absolute;
+            right: 20px;
+            top: 35px;
+        }
+
+        #pass_error{
+            margin-top: -20px;
+        }
+
+        #padding_1{
+            position: relative;
+            top: 8px;
+            
+        }
+
+        #address{
+            margin-top: 5px;
+        }
+
+        /* a {
+            text-decoration: none;
+            color: rgb(27, 128, 223)
+        } */
+    

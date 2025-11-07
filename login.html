@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Carter+One&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Login Form</title>
+
+    <link href="login.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="login_form" method="post" name="form" onsubmit="return validated()">
+            <b>
+                <h1 class="label">LOGIN</h1>
+                <div class="font">Email:</div>
+                <input type="email" name="email" placeholder="Enter Email.">
+                <i class="ri-mail-fill"></i>
+                <div id="email_error">Please enter a valid email.</div>
+                <div class="font font2">Password:</div>
+                <div class="pass_place">
+                    <input type="password" name="password" placeholder="Enter Password." id="login-pass">
+                    <div class="eye">
+                        <i class="ri-eye-off-fill login__eye" id="login-eye"></i>
+                    </div>
+                </div>
+                <div id="pass_error">Please enter a password of 6 atleast characters.</div>
+                <button type="submit">Login</button>
+
+                <p>Not registered?
+                    <a href="register.html">Create an account.</a>
+                </p>
+            </b>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
