@@ -11,25 +11,34 @@ function showError(inputField, errorMessage) {
 }
 
 function hideError(inputField) {
-    var errorDiv = inputField.parentElement.querySelector('.valid');
-    if (inputField.id === 'email') {
-        if (!validateEmail(inputField.value.trim())) {
-            return; 
-        }
+  const errorDiv = inputField.parentElement.querySelector('.valid');
+  if (!errorDiv) return;
+
+  if (inputField.id === 'email') {
+    if (validateEmail(inputField.value.trim())) {
+      errorDiv.style.display = 'none';
+      inputField.style.border = '1px solid #ccc';
+    } else {
+      errorDiv.style.display = 'block';
+      inputField.style.border = '1px solid red';
     }
-    if (inputField.value.trim() !== '') {
+    return;
+  }
+
+  if (inputField.value.trim() !== '') {
     errorDiv.style.display = 'none';
     inputField.style.border = '1px solid #ccc';
-    }  
+  }
 }
 
 function validateForm() {
-    var nameField = document.forms['form_fill']['name'];
-    var emailField = document.forms['form_fill']['email'];
-    var passwordField = document.forms['form_fill']['password'];
-    var aadharField = document.forms['form_fill']['aadhar_no'];
-    var dobField = document.forms['form_fill']['date'];
-    var mobField = document.forms['form_fill']['mob'];
+var nameField = document.forms['form_fill']['name'];
+var emailField = document.forms['form_fill']['email'];
+var passwordField = document.forms['form_fill']['password'];
+var aadharField = document.forms['form_fill']['aadhar'];
+var dobField = document.forms['form_fill']['dob'];
+var mobField = document.forms['form_fill']['mob_no'];
+
 
     var isValid = true;
 
@@ -99,7 +108,6 @@ else {
 }
 
 showHiddenPass('pass', 'login-eye')
-
 
 
 
